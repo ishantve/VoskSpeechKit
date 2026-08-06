@@ -25,10 +25,10 @@ Pod::Spec.new do |s|
   s.source_files        = 'Sources/VoskSpeechKit/**/*.swift', 'Sources/CVosk/include/vosk_api.h'
   s.public_header_files = 'Sources/CVosk/include/vosk_api.h'
 
-  # Models dropped into the kit ship with it (git-ignored by default; commit via
-  # git-lfs to bundle one). Under CocoaPods these land in the host bundle — pass
-  # that path to VoskModelLocator(modelsRootPath:) (Bundle.module is SPM-only).
-  s.resources = 'Sources/VoskSpeechKit/Models/**/*'
+  # The acoustic model is NOT shipped in the pod (it isn't in git). Ship it in your
+  # app and pass its path to VoskSpeechModel(path:) / VoskModelLocator(modelsRootPath:).
+  # (Bundle.module bundling is SwiftPM-only; a CocoaPods resource glob over the model
+  # would also collide on duplicate filenames across the model's subfolders.)
 
   # Native Vosk static library (arm64 device + arm64/x86_64 simulator).
   s.vendored_frameworks = 'Frameworks/libvosk.xcframework'
