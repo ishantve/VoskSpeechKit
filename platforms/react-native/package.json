@@ -6,7 +6,11 @@
   "types": "src/index.tsx",
   "files": ["src", "ios", "vosk-speech-kit.podspec", "README.md"],
   "keywords": ["react-native", "vosk", "speech-to-text", "offline", "asr", "ios"],
-  "repository": "https://github.com/ishantve/VoskSpeechKit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishantve/VoskSpeechKit.git",
+    "directory": "platforms/react-native"
+  },
   "author": "Ishant <ishant@zibaltech.com>",
   "license": "Apache-2.0",
   "peerDependencies": { "react": "*", "react-native": "*" }
