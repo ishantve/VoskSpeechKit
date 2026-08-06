@@ -1,0 +1,2 @@
+# Vosk static libraries (libvosk.xcframework slices) — large binaries via Git LFS.
+*.a filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,16 @@
+.DS_Store
+.build/
+DerivedData/
+build/
+*.xcuserstate
+.swiftpm/xcode/xcuserdata/
+xcuserdata/
+node_modules/
+# Unity FFI xcframework is a build artifact (generate via scripts/build-ffi-xcframework.sh)
+platforms/unity/Runtime/Plugins/iOS/VoskSpeechFFI.xcframework/
+
+# Vosk acoustic model — too large for git. Ship separately (GitHub Release asset /
+# download at runtime); the kit is path-based (VoskModelLocator). Kept on disk for
+# local dev only.
+Sources/VoskSpeechKit/Models/*
+!Sources/VoskSpeechKit/Models/README.md

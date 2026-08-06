@@ -1,0 +1,6 @@
+// Exposes Vosk's C API to Swift as `import CVosk`. The declarations live here;
+// the symbols are provided by the vendored `libvosk` binary target (libvosk.a).
+module CVosk {
+    header "vosk_api.h"
+    export *
+}

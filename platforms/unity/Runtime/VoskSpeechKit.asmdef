@@ -1,0 +1,8 @@
+{
+  "name": "VoskSpeechKit",
+  "rootNamespace": "VoskSpeechKit",
+  "references": [],
+  "includePlatforms": ["iOS"],
+  "allowUnsafeCode": false,
+  "autoReferenced": true
+}

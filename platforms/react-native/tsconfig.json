@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "jsx": "react-native",
+    "typeRoots": ["./types", "./node_modules/@types"]
+  },
+  "include": ["src", "types"]
+}

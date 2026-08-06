@@ -1,0 +1,10 @@
+{
+  "name": "tech.zibal.vosk-speech-kit",
+  "version": "0.1.0",
+  "displayName": "VoskSpeechKit",
+  "description": "Offline Vosk speech-to-text for Unity (iOS). Feed 16 kHz mono PCM, read partial/final transcripts. Wraps the native VoskSpeechKit FFI.",
+  "unity": "2021.3",
+  "keywords": ["vosk", "speech-to-text", "asr", "offline", "ios"],
+  "author": { "name": "Ishant", "email": "ishant@zibaltech.com" },
+  "license": "Apache-2.0"
+}
