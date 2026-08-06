@@ -1,5 +1,10 @@
 # VoskSpeechKit
 
+[![CocoaPods](https://img.shields.io/cocoapods/v/VoskSpeechKit.svg)](https://cocoapods.org/pods/VoskSpeechKit)
+[![npm](https://img.shields.io/npm/v/@ishant89/vosk-speech-kit.svg)](https://www.npmjs.com/package/@ishant89/vosk-speech-kit)
+[![SwiftPM](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://github.com/ishantve/VoskSpeechKit)
+[![Platform](https://img.shields.io/cocoapods/p/VoskSpeechKit.svg)](https://cocoapods.org/pods/VoskSpeechKit)
+
 Offline speech-to-text built on [Vosk](https://alphacephei.com/vosk/) — **one Swift
 core** wrapped for **native iOS (SPM & CocoaPods)**, **React Native**, and **Unity**.
 
@@ -70,9 +75,11 @@ _ = rec.acceptWaveform(int16Samples); print(rec.result.value)
 
 ## iOS — CocoaPods
 
+Published on [CocoaPods](https://cocoapods.org/pods/VoskSpeechKit):
+
 ```ruby
 # Podfile
-pod 'VoskSpeechKit', :git => 'https://github.com/ishantve/VoskSpeechKit.git', :tag => '0.1.0'
+pod 'VoskSpeechKit', '~> 0.1'
 ```
 ```sh
 pod install
@@ -89,11 +96,9 @@ explicit path.) Usage is the same Swift API as above.
 npm install @ishant89/vosk-speech-kit
 cd ios && pod install
 ```
-In the app's **Podfile**, add the native core (the npm package is the JS + bridge; the
-Swift core that vendors `libvosk` is the sibling pod):
-```ruby
-pod 'VoskSpeechKit', :git => 'https://github.com/ishantve/VoskSpeechKit.git', :tag => '0.1.0'
-```
+The native Swift core (`VoskSpeechKit`, which vendors `libvosk`) resolves
+automatically from CocoaPods — it's a dependency of this package's podspec, so no
+extra Podfile entry is needed.
 
 **Add the model:** bundle it with your iOS app (drag the `atc-lgraph-v10/` folder into
 the Xcode project as a *folder reference*), then pass its on-device path:
