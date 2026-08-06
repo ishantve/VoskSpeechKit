@@ -1,11 +1,11 @@
-# vosk-speech-kit (React Native)
+# @ishant89/vosk-speech-kit (React Native)
 
 Offline Vosk speech-to-text for React Native (iOS). Thin bridge over the native
 [VoskSpeechKit](https://github.com/ishantve/VoskSpeechKit) Swift core.
 
 ## Install
 ```sh
-npm install vosk-speech-kit
+npm install @ishant89/vosk-speech-kit
 cd ios && pod install
 ```
 Add the native core to your app's **Podfile** (it vendors `libvosk`):
@@ -22,7 +22,7 @@ The model is not shipped. Bundle it with your iOS app:
 
 ## Usage
 ```ts
-import VoskSpeech from 'vosk-speech-kit';
+import VoskSpeech from '@ishant89/vosk-speech-kit';
 import { MainBundlePath } from 'react-native-fs';
 
 const info = await VoskSpeech.loadLatestModel(`${MainBundlePath}/Models`); // or loadModel(exactPath)

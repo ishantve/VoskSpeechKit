@@ -86,7 +86,7 @@ explicit path.) Usage is the same Swift API as above.
 ## React Native — npm
 
 ```sh
-npm install vosk-speech-kit
+npm install @ishant89/vosk-speech-kit
 cd ios && pod install
 ```
 In the app's **Podfile**, add the native core (the npm package is the JS + bridge; the
@@ -98,7 +98,7 @@ pod 'VoskSpeechKit', :git => 'https://github.com/ishantve/VoskSpeechKit.git', :t
 **Add the model:** bundle it with your iOS app (drag the `atc-lgraph-v10/` folder into
 the Xcode project as a *folder reference*), then pass its on-device path:
 ```ts
-import VoskSpeech from 'vosk-speech-kit';
+import VoskSpeech from '@ishant89/vosk-speech-kit';
 import { MainBundlePath } from 'react-native-fs';
 
 // pick the newest model under a folder, or pass an exact path with loadModel()

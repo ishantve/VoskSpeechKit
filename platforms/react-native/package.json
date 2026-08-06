@@ -1,6 +1,7 @@
 {
-  "name": "vosk-speech-kit",
+  "name": "@ishant89/vosk-speech-kit",
   "version": "0.1.0",
+  "publishConfig": { "access": "public" },
   "description": "Offline Vosk speech-to-text for React Native (iOS) — wraps VoskSpeechKit.",
   "main": "src/index.tsx",
   "types": "src/index.tsx",
